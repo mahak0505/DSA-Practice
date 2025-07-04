@@ -1,0 +1,4 @@
+*.exe
+git add .gitignore
+git commit -m "Ignore .exe files"
+git push origin main
