@@ -21,8 +21,8 @@ int main(){
    bool pow2=  powerof2(b);
    bool pow3=  powerof2(c);
 
-   cout<<a<<"is power of 2 :"<<pow1<<endl;
-   cout<<b<<"is power of 2 :"<<pow2<<endl;
-   cout<<c<<"is power of 2 :"<<pow3<<endl;
+   cout<< a << " is power of 2 :"<<pow1<<endl;
+   cout<< b << "is power of 2 :"<<pow2<<endl;
+   cout<< c <<" is power of 2 :"<<pow3<<endl;
    return 0;
 }
