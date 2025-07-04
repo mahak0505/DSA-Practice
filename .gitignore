@@ -1,0 +1,9 @@
+# Ignore all executable files
+*.exe
+
+# Ignore VS Code temporary code runner files
+tempCodeRunnerFile.*
+
+# Ignore common system files
+.DS_Store
+Thumbs.db
