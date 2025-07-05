@@ -23,6 +23,6 @@ using namespace std;
 int main (){
   int  arr[6]={22,4,54,578,10,4};
   vector<int> nums(arr,arr+6);
-    cout<<"numbers  odf even digit containing elements :"<<findNumbers( nums);
+    cout<<"number of even digit containing elements :"<<findNumbers( nums);
     return 0;
 }
