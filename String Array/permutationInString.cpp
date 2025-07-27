@@ -28,7 +28,7 @@ bool checkEqual( int a[26], int b[26]){
        int k = s1.length();
        int count2[26]={0};
 
-        while(i<k){
+        while(i<k && i<s2.length()){
             int index = s2[i]-'a';
             count2[index]++;
             i++;
