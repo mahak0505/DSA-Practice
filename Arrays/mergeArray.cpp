@@ -1,8 +1,7 @@
-//merge sorted arrays without removing duplicate elements
+//Q.1 (b)merge sorted arrays without removing duplicate elements
 #include <iostream>
 #include <vector>
 using namespace std;
-
 
 vector<int> mergeSortedArray( vector<int>& arr1,  vector<int>& arr2){
 vector<int> merged;
@@ -19,26 +18,22 @@ while(i<arr1.size() && j<arr2.size()){
         j++;
      }
 }
- 
 while(i<arr1.size()){
      merged.push_back(arr1[i]);
         i++;
 }
-
 while(j<arr2.size()){
      merged.push_back(arr2[j]);
         j++;
     }
 return merged;
 }
-
 void printArray( vector<int>& arr){
     for(int num : arr){
         cout<<num<<" ";
     }
     cout<<endl;
 }
-
 
 int main(){
      vector<int> arr1 = { 1 ,2 , 5 ,7 , 10};
