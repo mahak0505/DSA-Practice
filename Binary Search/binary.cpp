@@ -1,3 +1,4 @@
+//Q.5 Implement the Binary Search technique on a sorted array. 
 #include <iostream>
 #include <vector>
 using namespace std;
