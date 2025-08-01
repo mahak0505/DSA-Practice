@@ -7,9 +7,9 @@ int fastExponentiation(int a,int b,int m){
     while(b>0){
      if(b&1)
     {
-       result=((result)*a%m)%m;
+       result=(1LL*(result)*a%m)%m;
     }  
-    a=((a%m)*(a%m));
+    a=(1LL*(a%m)*(a%m));
     b=b>>1;
   }
   return result;
