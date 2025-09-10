@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void bubbleSort(int *arr,int size){
+void bubbleSort(int arr[],int size){
     if(size==0 || size==1){
         return;
     }
@@ -12,7 +12,7 @@ void bubbleSort(int *arr,int size){
     }
     return bubbleSort(arr,size-1);
 }
-void printArray(int *arr,int n){
+void printArray(int arr[],int n){
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
