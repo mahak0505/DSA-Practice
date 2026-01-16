@@ -9,7 +9,7 @@ public:
     Node* next;
     //constructor
     Node(int data){
-        this ->data=data;
+        this ->data=data; 
         this ->next=NULL;
     }
     //desturctor
@@ -21,7 +21,6 @@ public:
         }
     }
 };
-
 void InsertAtHead(Node* &head,int d){
     Node* temp = new Node(d);
     temp ->next =head;

@@ -47,6 +47,22 @@ void InsertAtPosition(Node* &tail,Node* &head,int position,int d){
     temp ->next= nodeToInsert;
 } 
 
+void reverseLL(Node* &head){
+    if(head==NULL || head->next==NULL){
+        return;
+    }
+    Node* prev=NULL;
+    Node* curr=head;
+    Node* fwd=NULL;
+
+    while(curr){
+        fwd=curr->next;
+        curr->next=prev;
+        prev=curr;
+        curr=fwd;
+    }
+     head=prev;
+}
 
 void print(Node* &head){
  Node* temp = head;
@@ -56,6 +72,7 @@ void print(Node* &head){
  }
  cout<<endl;
 }
+ 
 
 int main(){
     Node* node1 = new Node(9);
@@ -74,5 +91,8 @@ int main(){
      print(head);
      cout<<"after insertion in middle"<<endl;
      InsertAtPosition(tail,head,3,5);
+     print(head);
+     cout<<"After reversal: "<<endl;
+     reverseLL(head);
      print(head);
 }                      
